@@ -1,38 +1,167 @@
+*{
+  margin: 0;
+  padding: 0;
+
+}
 .App {
-  text-align: center;
+  height: 100%;
+  width: 100%;
+  background-color: bisque;
 }
 
-.App-logo {
-  height: 40vmin;
-  pointer-events: none;
+.header{
+  width: 100%;
+  height: 55px  ;
+  background-color: crimson;
+  color: bisque;
+  position: sticky;
+  top: 0;
 }
-
-@media (prefers-reduced-motion: no-preference) {
-  .App-logo {
-    animation: App-logo-spin infinite 20s linear;
-  }
-}
-
-.App-header {
-  background-color: #282c34;
-  min-height: 100vh;
+.header-position{
+  padding: 0 55px;
+  height: 55px  ;
   display: flex;
-  flex-direction: column;
+  justify-content: space-between;
+  align-items: center;
+}
+.logo{
+  letter-spacing: 7px;
+  text-transform: uppercase;
+}
+.navbar a{
+  padding: 0 10px;
+}
+.navbar a:hover{
+  border-bottom: 2px solid bisque;
+  cursor: pointer;
+}
+.container{
+  height: 100%;
+  width: 90%;
+  margin: auto;
+}   
+.menu{
+  margin: 5% 0;
+}
+.product{
+  display: flex;
+  flex-wrap: wrap;
+}
+
+.product-list{
+  width: 22%;
+  border: solid grey 1px;
+  border-radius: 7px;
+  margin: 10px;
+  overflow: hidden;
+}
+.product-list:hover{
+  box-shadow: 0 0 11px rgba(33,33,33,.2); 
+}
+.product-img img{
+  width: 100%;
+}
+.product-desc{
+  padding: 0 10px;
+  padding-bottom: 10px;
+}
+.product-list button{
+  width: 100%;
+  height: 30px;
+  letter-spacing: 2px;
+  cursor: pointer;
+  background-color: crimson;
+  border: transparent;
+  color: bisque;
+  font-weight: bold;
+  text-transform: uppercase;
+}
+footer{
+  background-color: crimson;
+  color: bisque;
+  height: 84px;
+}
+.copyright{
+  display: flex;
   align-items: center;
   justify-content: center;
-  font-size: calc(10px + 2vmin);
-  color: white;
+  padding-top: 1%;
 }
-
-.App-link {
-  color: #61dafb;
+.social{
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  padding-top: 1%;
 }
+.social hr{
+  height: 15px;
+}
+.social a{
+  color: bisque;
+  padding: 0 10px;
+}
+.buy{
+  border: 1px solid maroon;
+  margin-bottom: 5%;
+  border-radius: 10px;
+    overflow: hidden;
 
-@keyframes App-logo-spin {
-  from {
-    transform: rotate(0deg);
-  }
-  to {
-    transform: rotate(360deg);
-  }
+}
+.buy h1{
+  text-align: center;
+}
+table{
+  width: 100%;
+  height: 100%;
+  align-items: center;
+  text-transform: capitalize;
+  padding: 2% 5%;
+}
+.qty{
+  display: flex;
+  justify-content: space-evenly
+}
+table button{
+  height: 25px;
+  width: 50px;
+}
+table td.mid{
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.btn-r{
+  display: flex;
+  justify-content: right;
+  align-items: right;
+  border-bottom: 1px solid maroon;
+}
+.btn-r button{
+   height: 30px;
+  width: 30px;
+  background-color: maroon;
+  border: transparent;
+  color: bisque;
+  cursor: pointer;
+}
+.min{
+  
+
+  cursor: pointer;
+  background-color: blanchedalmond;
+  border: solid 1px maroon;
+  border-radius: 5px;
+}
+.plus{
+  background-color: maroon;
+  border: transparent;
+  color: bisque;
+  cursor: pointer;
+  border-radius: 5px;
+}
+.close{
+  cursor: pointer;
+  background-color: blanchedalmond;
+  border: solid 1px maroon;
+
 }
